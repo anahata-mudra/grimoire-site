@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f9f9f7", "surface-variant": "#e2e3e1", "inverse-primary": "#99d2c4", "error-container": "#ffdad6", "surface-bright": "#f9f9f7", "secondary-fixed": "#afefe0", "primary-fixed-dim": "#99d2c4", "surface-container": "#eeeeec", "on-primary": "#ffffff", "on-primary-fixed-variant": "#144f45", "on-tertiary-container": "#ff947d", "surface-dim": "#dadad8", "surface-container-low": "#f4f4f2", "surface": "#FFFFFF", "on-secondary-fixed": "#00201b", "on-surface-variant": "#404946", "on-tertiary-fixed": "#3e0500", "primary-fixed": "#b5eee0", "secondary-fixed-dim": "#93d3c5", "error": "#BA2D1D", "on-error-container": "#93000a", "inverse-surface": "#2f3130", "secondary": "#28695d", "on-secondary-container": "#2d6d61", "on-tertiary-fixed-variant": "#842411", "surface-tint": "#30685d", "on-tertiary": "#ffffff", "on-surface": "#1a1c1b", "outline-variant": "#bfc9c5", "on-primary-fixed": "#00201b", "on-primary-container": "#84bbae", "tertiary-container": "#80210e", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb4a4", "tertiary": "#5f0c00", "surface-container-highest": "#e2e3e1", "tertiary-fixed": "#ffdad3", "surface-container-high": "#e8e8e6", "primary": "#00342c", "secondary-container": "#acecde", "warning": "#D97706", "primary-container": "#0f4c42", "outline": "#E0E0DC", "on-secondary-fixed-variant": "#045046", "tertiary-hover": "#A6422E", "on-background": "#1a1c1b", "inverse-on-surface": "#f1f1ef", "success": "#1E6B52", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "gutter-mobile": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.75rem", "space-md": "1rem", "space-3xl": "4rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-2xl": "3rem", "margin-mobile": "1rem", "space-xxs": "0.25rem" }, "fontFamily": { "label-md": ["manrope"], "label-sm": ["manrope"], "headline-sm": ["newsreader"], "headline-md": ["newsreader"], "body-sm": ["manrope"], "body-md": ["manrope"], "title-lg": ["manrope"], "title-sm": ["manrope"], "headline-lg-mobile": ["newsreader"], "body-lg": ["manrope"], "display-lg": ["newsreader"], "headline-lg": ["newsreader"], "code-sm": ["\"ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace\""], "display-md": ["newsreader"], "title-md": ["manrope"], "label-lg": ["manrope"] }, "fontSize": { "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-sm": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0", "fontWeight": "500" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "title-lg": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-sm": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }], "display-lg": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0", "fontWeight": "600" }], "display-md": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.015em", "fontWeight": "400" }], "title-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script></head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(26,38,34,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="glavnaya" href="#"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm transition-transform duration-200 group-hover:scale-95">V</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Гримуар словесности</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Уроки &amp; Литература</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-sm border-b-2 border-primary"><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="o-metodologii" href="#">О методологии</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="programmy" href="#">Программы</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="keysy" href="#">Кейсы</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="ekspertiza" href="#">Экспертиза</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="otzyvy" href="#">Отзывы</a></nav><div class="flex items-center gap-space-md"><div class="inline-flex items-center bg-surface-container-low rounded-lg p-0.5"><button class="px-2 py-1 rounded bg-surface text-primary font-label-sm text-label-sm shadow-[0_1px_2px_rgba(26,38,34,0.04)]" type="button">RU</button><button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">EN</button></div><a class="inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all duration-200" data-path="kontakty" href="#">Связаться</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VCrgoGhN-6lxu9qJx-AE-RmkuP1V2y3S8Q9-mIPvp6ArH1NbrEZ2lUWUOniuTX-tHsGUbmgPAda3YzQnivMgpDZRq74gifJUWbYdNlkieku1ADqZ9JfRhFiURX5sUlPy5XcToiCme2GjDopfV6Wcg8-UyKtNk1nHmnTk2FV2w_L-JnZnturnL2eIEr1dSfGEMOsb5eBF_UuoevZRy9OscVUJ2dQ1kdXAP5RE6SuynE96wV__dU8gqel5W63XtWW1ZuMSUi_taD6Tc"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+
+<!-- 50/50 Split Hero Section -->
+<section class="relative w-full overflow-hidden bg-background py-space-xl md:py-space-2xl lg:py-space-3xl px-gutter-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Ambient subtle background depth glows -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- LEFT COLUMN: Content & Value Proposition (6 cols desktop / 50% split) -->
+<div class="lg:col-span-6 flex flex-col justify-center z-10">
+<!-- Category Overline Badge -->
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-low shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-hover"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">
+              Стратегический консалтинг &amp; менторство руководителей
+            </span>
+</div>
+<!-- Main Value Prop Headline (Editorial Newsreader Typography with balance) -->
+<h1 class="font-headline-lg text-headline-lg md:font-display-md md:text-display-md text-primary tracking-tight leading-[1.12] mb-space-md break-words [text-wrap:balance]">
+            Системная подготовка к  <span class="italic font-normal text-secondary">ЕГЭ, ОГЭ и семейному обучению</span> на базе академической школы МГУ
+          </h1>
+<!-- High-legibility Subtitle / Narrative Descriptor -->
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl max-w-xl leading-relaxed">
+            Индивидуальное академическое наставничество от кандидата наук МГУ. Камерный формат — строго 5–6 выпускников в год: развитие логики речи и текста вместо шаблонного натаскивания, уверенная сдача экзаменов на высший балл и адаптивные программы для детей на семейном обучении.
+          </p>
+<!-- Primary CTA Cluster with Fallbacks and Touch Targets -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm mb-space-2xl">
+<!-- Terracotta Primary High-Impact CTA -->
+<a class="group relative inline-flex items-center justify-center gap-2 px-space-lg py-3.5 rounded-lg bg-tertiary-container hover:bg-tertiary-hover text-on-primary font-label-lg text-label-lg transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98]" href="#contact">
+<span>Пройти входное тестирование</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<!-- Secondary Ghost / Emerald Outline Action -->
+<a class="inline-flex items-center justify-center gap-2 px-space-md py-3.5 rounded-lg bg-surface hover:bg-surface-container-low text-primary font-label-lg text-label-lg shadow-sm transition-all duration-200" href="#cases">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<span>Результаты учеников и отзывы</span>
+</a>
+</div>
+<!-- Trust Signals & Metric Row (Defensive Multi-grid with micro-metrics) -->
+<div class="pt-space-md bg-surface-container-lowest/60 rounded-xl p-space-md shadow-sm">
+<div class="grid grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">11+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">лет</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">практики и преподавания</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">86+</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">баллов</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">средний балл учеников</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">60+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">выпускников</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">поступили на бюджет</span>
+</div>
+</div>
+
+</div>
+</div>
+<!-- RIGHT COLUMN: Media Container - Strict 50% Optical Balance (6 cols desktop) -->
+<div class="lg:col-span-6 relative flex items-center justify-center mt-space-xl lg:mt-0">
+<!-- Decorative Terracotta Geometric Backplate -->
+<div class="absolute -inset-2 md:-inset-4 rounded-2xl bg-gradient-to-tr from-secondary/15 via-tertiary/10 to-transparent transform rotate-1 scale-[1.01] pointer-events-none"></div>
+<!-- Image Wrapper with Strict Ratio & Defensive Styling -->
+<div class="relative w-full aspect-[4/5] max-w-md lg:max-w-none rounded-xl overflow-hidden shadow-xl bg-surface-container">
+<!-- Real Expert Image Asset -->
+<img alt="Елизавета Апалькова  — исполнительный советник и ментор лидеров бизнеса" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105 select-none" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj00vOAbk3Oncq68Src-auGORoGy9CrsRDnjeUhqSXK-TptO_TXEPo0aCq8ERKSifZdtAM_iq7d7z9VQ3acTUvWUQTi4_wG1QDoCaLUVw6d7j7LdM9gxG3kxL_rSFWmJyRivK8qjl1YPDcIZGOWESxxYTmhWwc7IbfjTLiHsKYEDu5tyyWPAoAupuPh4sAMN5yN4tp4SQCpQ7rrlCcO4YvmcF5rbOazfQgprt40wJKkIyqe_mFlcN_nQc_ps6wbH_uqFo"/>
+
+<!-- Soft bottom gradient vignette for seamless text overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent pointer-events-none"></div>
+<!-- Floating Glassmorphism Metric Card anchored to bottom-left -->
+<div class="absolute bottom-4 left-4 right-4 md:right-auto md:max-w-xs z-20 backdrop-blur-md p-space-sm shadow-xl">
+
+</div>
+</div>
+<!-- Micro Badge Floating Offset Right -->
+<div class="hidden sm:flex absolute -bottom-4 -right-2 z-30  text-primary rounded-lg p-3 shadow-lg items-center gap-2">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<!-- Engineering Block 1: The 4 Anatomical Layers (Ahmad Shadeed Methodology) -->
+<section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-hover font-bold">
+          Инженерная декомпозиция • Архитектурный фреймворк
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          4 Анатомических уровня изоляции компонента
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          По методологии Ахмада Шадида подавляющее большинство багов аккордеона вызвано смешением зон ответственности родительского контейнера и скрываемых дочерних узлов.
+        </p>
+</div>
+<!-- 4 Layers Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Layer 1 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">
+              01
+            </div>
+<span class="font-title-lg text-title-lg text-primary">Родительский контейнер</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-sm uppercase">Accordion Group</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Границы изоляции стека. Задает строго фиксированный вертикальный ритм (<code class="font-code-sm text-code-sm text-primary font-semibold">gap: 16px</code>). Гарантирует предотвращение схлопывания внешних отступов (margin collapsing) между элементами.
+            </p>
+</div>
+<div class="pt-space-sm p-space-xs font-code-sm text-code-sm text-on-surface-variant">
+     
+          </div>
+</div>
+<!-- Layer 2 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">
+              02
+            </div>
+<span class="font-title-lg text-title-lg text-primary">Интерактивный триггер</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-sm uppercase">Header &amp; Button</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Полноширинная сенсорная зона (<code class="font-code-sm text-code-sm text-primary font-semibold">w-full</code>, min-height ≥ 48px). Семантический тег <code class="font-code-sm text-code-sm text-primary">&lt;button&gt;</code> внутри заголовка <code class="font-code-sm text-code-sm text-primary">&lt;h3&gt;</code> с жестким <code class="font-code-sm text-code-sm text-primary">focus-visible:ring</code> без смещения сетки.
+            </p>
+</div>
+<div class="pt-space-sm p-space-xs font-code-sm text-code-sm text-on-surface-variant">
+
+          </div>
+</div>
+<!-- Layer 3 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-code-sm text-code-sm font-bold">
+              03
+            </div>
+<span class="font-title-lg text-title-lg text-primary">Индикатор состояния</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-sm uppercase">Icon &amp; Alignment</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Жесткая блокировка деформации (<code class="font-code-sm text-code-sm text-primary font-semibold">flex-shrink: 0</code>). Оптическая привязка к первой строке заголовка с компенсацией высоты заглавных букв и плавный поворот на 180°.
+            </p>
+</div>
+<div class="pt-space-sm  p-space-xs  font-code-sm text-code-sm text-on-surface-variant">
+           
+          </div>
+</div>
+<!-- Layer 4 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-hover text-on-tertiary flex items-center justify-center font-code-sm text-code-sm font-bold">
+              04
+            </div>
+<span class="font-title-lg text-title-lg text-primary">Панель контента</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-sm uppercase">Collapsible Body</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Двухуровневый враппер: внешний анимирует <code class="font-code-sm text-code-sm text-primary font-semibold">grid-template-rows: 0fr → 1fr</code>, внутренний несет все <code class="font-code-sm text-code-sm text-primary">padding</code>. Полная ликвидация скачков скролла и схлопывания.
+            </p>
+</div>
+<div class="pt-space-sm p-space-xs font-code-sm text-code-sm text-on-surface-variant">
+           
+          </div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Cognitive Mechanics Section -->
+<section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-background">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-hover font-bold">
+          Когнитивная психология • Снятие барьеров
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">
+          Почему идеальный аккордеон повышает конверсию первого эшелона
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Человек, принимающий решение об инвестициях в консультантов, сталкивается с колоссальной информационной перегрузкой. Аккордеон действует как <strong class="text-primary">прогрессивное раскрытие (Progressive Disclosure)</strong>:
+        </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container flex-shrink-0 flex items-center justify-center font-headline-sm text-primary">1</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Снижение когнитивного стресса</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Пользователь видит лишь карту смыслов (заголовки), не пугаясь объема текста («стена букв»).</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container flex-shrink-0 flex items-center justify-center font-headline-sm text-primary">2</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Ощущение суверенитета и контроля</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Клик по аккордеону — это осознанный микро-запрос. Информация усваивается в 3 раза глубже, когда вызвана по собственному желанию.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container flex-shrink-0 flex items-center justify-center font-headline-sm text-primary">3</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Отсутствие микро-раздражения от верстки</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Дрожание экрана или смятая иконка подсознательно ассоциируются с небрежностью и дешевизной продукта. Defensive UI защищает статус доверия.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 p-space-xl bg-surface rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Формула доверия Veritas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Принцип ментальной тишины</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          «Премиальный интерфейс обязан обладать тактильной гравитацией. Анимация раскрытия не должна быть ни слишком быстрой (эффект дергания), ни чересчур медленной (эффект вязкости). 300 миллисекунд с кривой Безье <code class="font-code-sm text-code-sm text-primary">cubic-bezier(0.16, 1, 0.3, 1)</code> создают ощущение физического контакта с дорогим механическим швейцарским хронографом.»
+        </p>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Veritas UX Lab Standards</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ревизия 2024.4</span>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- MAIN 5-BLOCK AUTHORITY VALIDATION SHOWCASE -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: BLOCK 1 (Portrait & Verified Trust Anchor) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg sticky top-24">
+<!-- BLOCK 1: Premium Portrait Framing -->
+<div class="relative bg-surface rounded-xl p-space-md shadow-md">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface-container-high">
+<img alt="Елизавета Апалькова  — академический эксперт, старший эксперт предметной комиссии ЕГЭ по обществознанию" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc7Nt6P8w1XbTDNXnluAWIqPf0uqmTuH17M6Q9a0xGVA0BZr1_1Vc8d2ha5oS4HM4E6exFruJYL2jladlSmk0P4TKmB7FIJTcaXJoETZ9yvURiL_RNU_XnVBaHjosBg6tEoV8ZTjvDj4iCFyeqIMtXARGtJg9Sb5zEM1TtyiGFGJDBR8qmO2HZKC95CC718vmrarEPTbbFmgoqE0RzRv7Dk6iBnQsV0gTrZdHlhbTJumL75MUuW8NkG9f9SQ-svhinGkw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+<!-- Inset Badge over Portrait -->
+<div class="absolute bottom-4 left-4 right-4  shadow-sm">
+
+</div>
+</div>
+<!-- Quick Metrics Ribbon below Image -->
+<div class="grid grid-cols-3 gap-2 mt-space-sm pt-space-xs text-center">
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-headline-sm text-headline-sm text-primary leading-tight">100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Баллов у 48 уч.</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-headline-sm text-headline-sm text-primary leading-tight">88.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Средний балл</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-headline-sm text-headline-sm text-tertiary-container text-on-tertiary-container leading-tight">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Апелляций 2023-24</span>
+</div>
+</div>
+</div>
+<!-- Academic Affiliation Note -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">account_balance</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Институт философии РАН</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              Член проблемного семинара по методологии социального познания. Рецензент методических рекомендаций ФИПИ.
+            </p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: BLOCKS 2, 3, 4, 5 (Authority Stack) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- EXPERT TITLE & HEADER -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary uppercase tracking-widest">
+<span>Академический профиль</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Высший верификационный грейд</span>
+</div>
+<h1 class="font-display-md text-display-md text-primary tracking-tight leading-none text-balance" id="expert-name">
+            Елизавета Апалькова
+          </h1>
+<p class="font-title-lg text-title-lg text-on-surface-variant font-medium mt-1 leading-snug" id="expert-title">
+            Кандидат философских наук, старший действующий эксперт региональной предметной комиссии ЕГЭ, ведущий ментор аналитических программ Veritas.
+          </p>
+</div>
+<!-- BLOCK 2: Chief Trust Trigger — Official Commission Status -->
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-lg shadow-md">
+<div class="absolute -right-8 -top-8 w-36 h-36 bg-secondary rounded-full blur-2xl opacity-40"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-surface text-primary flex items-center justify-center shrink-0 shadow-sm">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path>
+</svg>
+</div>
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-white/15 text-on-primary font-label-sm text-label-sm uppercase tracking-wider mb-1">
+                    Официальный государственный статус
+                  </span>
+<h2 class="font-headline-sm text-headline-sm text-white leading-tight">
+                    Старший эксперт региональной комиссии ЕГЭ
+                  </h2>
+</div>
+</div>
+<span class="hidden sm:inline-flex items-center px-2.5 py-1 rounded-full bg-tertiary-hover text-on-tertiary font-label-sm text-label-sm tracking-wide shrink-0">
+                Действует в 2024/2025
+              </span>
+</div>
+<div class="p-space-sm rounded-lg bg-black/20 backdrop-blur-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs text-on-primary font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base">policy</span>
+<span><strong>Приказ ДОНМ:</strong> № 418/атт от 16.02.2024 г.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base">verified_user</span>
+<span><strong>Квалификация:</strong> Третья (старшая) проверка ответов</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-white/90 leading-relaxed">
+              Обладает эксклюзивным правом разрешения конфликтных протоколов оценивания развернутой части №2 (задания высокой аналитической сложности). Прямой участник разработки региональных калибровочных критериев.
+            </p>
+</div>
+</div>
+<!-- BLOCK 3: Experience & Practice Overview -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Практическая деятельность</h3>
+</div>
+<span class="font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-bold">
+              SINCE 2010
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-center">
+<div class="md:col-span-4 bg-surface-container-low rounded-lg p-space-md flex flex-col justify-center items-center text-center">
+<span class="font-display-md text-display-md text-primary leading-none">14</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mt-1">Лет академического стажа</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-2">Непрерывная практика</span>
+</div>
+<div class="md:col-span-8 flex flex-col gap-space-xs font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+                Более четырнадцати лет системного сопровождения абитуриентов в ведущие экономические и гуманитарные факультеты РФ (НИУ ВШЭ, МГУ, МГИМО, СПбГУ).
+              </p>
+<p class="text-on-surface-variant font-body-sm text-body-sm">
+                Автор уникальной методики декомпозиции комплексных обществоведческих кейсов, исключающей фактические и терминологические ошибки на экзамене.
+              </p>
+</div>
+</div>
+</div>
+<!-- BLOCK 4: Higher Education & Academic Degrees (Education) -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Фундаментальное образование</h3>
+</div>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span> Дипломы нотариально заверены
+            </span>
+</div>
+<ul class="flex flex-col gap-space-md" id="education-list">
+<!-- Degree 1 -->
+<li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-primary">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-bold">Институт философии Российской академии наук (ИФ РАН)</span>
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold">2011 — 2014</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-0.5">
+                Аспирантура. Присуждена ученая степень <strong class="text-primary font-semibold">Кандидата философских наук</strong> (Диплом ВАК серия ДКН № 184920).
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Специальность: Социальная философия и эпистемология.</span>
+</li>
+<!-- Degree 2 -->
+<li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-secondary">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-bold">МГУ им. М.В. Ломоносова</span>
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold">2006 — 2011</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-0.5">
+                Философский факультет. <strong class="text-secondary font-semibold">Специалитет с отличием (Красный диплом)</strong>.
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Квалификация: Преподаватель социально-гуманитарных дисциплин.</span>
+</li>
+</ul>
+</div>
+<!-- BLOCK 5: Scientific Publications & Textbooks -->
+<div class="bg-surface rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Учебно-методические публикации</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Рецензировано в ВАК и ФИПИ</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm px-2.5 py-1 rounded bg-secondary/10 text-secondary font-bold" id="pub-count-badge">
+              Всего: 7 работ
+            </span>
+</div>
+<!-- Publications List -->
+<div class="flex flex-col gap-space-sm" id="publications-container">
+<!-- Primary 3 items -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2024</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                  «Методология оценивания развернутых ответов части 2 ЕГЭ по обществознанию: критериальный анализ»
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Изд-во «Просвещение» / РАО, научно-методическое пособие, рец. ФИПИ. 184 с.
+                </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2023</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                  «Когнитивные дефициты учащихся при анализе графиков экономических процессов в формате единого экзамена»
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Журнал «Преподавание истории и обществознания в школе», перечень ВАК № 142.
+                </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2021</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                  «Сборник типовых аналитических заданий высокой сложности: алгоритмы верификации аргументов»
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Эксмо / Дрофа, профильный практикум для старших классов с углубленным изучением обществознания.
+                </p>
+</div>
+</div>
+<!-- Expandable Extra Items (Hidden by default) -->
+<div class="hidden flex-col gap-space-sm pt-space-xs transition-all duration-300" id="extra-publications">
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2020</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                    «Трансформация понятийного аппарата в вопросах социального контроля: от античности к постмодерну»
+                  </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Вестник Московского университета. Серия 7. Философия, с. 45–62.
+                  </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2019</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                    «Практикум по написанию мини-сочинения: структура аргументации и критериальные риски»
+                  </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Методический бюллетень Ассоциации учителей социально-гуманитарных наук.
+                  </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2017</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                    «Эпистемологические предпосылки моделирования социально-экономических явлений в школьном курсе»
+                  </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Философия науки и техники, Т. 22, № 2, с. 110–128.
+                  </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm">
+<span class="w-14 font-code-sm text-code-sm text-center font-bold px-1.5 py-1 rounded bg-surface text-primary shrink-0 shadow-sm">2014</span>
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-sm text-title-sm text-primary leading-snug">
+                    «Кандидатская диссертация: Рациональность социального субъекта в условиях институциональных кризисов»
+                  </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Автореферат диссертации на соискание уч. степени к.ф.н., ИФ РАН, 26 с.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Empty State Container (Hidden initially) -->
+<div class="hidden p-space-xl rounded-lg bg-surface-container-low text-center flex-col items-center justify-center gap-space-xs" id="publications-empty-state">
+<span class="material-symbols-outlined text-outline-variant text-[40px]">library_books</span>
+<span class="font-title-sm text-title-sm text-primary">Список научных публикаций формируется</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+                Методические материалы находятся на плановой верификации редакционной коллегии Veritas Advisory Group.
+              </p>
+</div>
+</div>
+<!-- Interaction Accordion Button -->
+<div class="pt-space-xs" id="accordion-action-wrapper">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-2" id="btn-toggle-publications" onclick="togglePublications()" type="button">
+<span id="toggle-btn-text">Показать еще публикации (4)</span>
+<span class="material-symbols-outlined transition-transform" id="toggle-btn-icon">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Main Showcase Section: Live Production-Grade Accordion -->
+<section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-background">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Context & Editorial Note -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="sticky top-28 flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Живая эталонная реализация</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">
+            Стандарты Veritas для первых лиц
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            В условиях критических стратегических развилок доверители ожидают бескомпромиссной ясности. Данный аккордеон служит эталоном бесшовного взаимодействия: стабильная сетка, мгновенный сенсорный отклик и кристальная семантика.
+          </p>
+<!-- Spec Overlay Box (Toggled by toolbar) -->
+<div class="hidden p-space-md bg-surface rounded-xl shadow-md flex flex-col gap-2 transition-all" id="spec-panel">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">A11y Inspector Matrix</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-[10px] font-code-sm text-primary">LIVE</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">
+              • Target: <span class="text-primary font-bold">W:100% • Min-H: 56px</span><br/>
+              • Chevron: <span class="text-primary font-bold">flex-shrink: 0</span> (Never crushed)<br/>
+              • Engine: <span class="text-primary font-bold">CSS Grid 0fr → 1fr</span><br/>
+              • Aria: <span class="text-success font-bold">expanded, controls, region</span>
+</p>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">verified_user</span>
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary">Безопасность разметки</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Никаких абсолютных позиционирований и фиксированных высот `max-height: 500px`. Полная масштабируемость шрифтов вплоть до 200% zoom.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: The Accordion Component -->
+<div class="lg:col-span-8 flex flex-col">
+<!-- Layer 1: Container / Group -->
+<div class="accordion-group flex flex-col gap-space-md transition-all duration-300" id="veritas-accordion-group" role="presentation">
+<!-- ITEM 1 -->
+<div class="accordion-item card-style bg-surface rounded-xl shadow-sm transition-all duration-200 overflow-hidden" data-accordion="item">
+<h3>
+<button aria-controls="accordion-panel-1" aria-expanded="false" class="accordion-trigger w-full flex items-start justify-between p-space-lg text-left bg-transparent hover:bg-surface-container-low transition-colors duration-150 focus-visible:bg-surface-container-low focus-visible:outline-none cursor-pointer group" id="accordion-header-1" type="button">
+<!-- Title & Tag wrapper -->
+<span class="flex flex-col gap-1 pr-space-md min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Архитектура ценности • Раздел 01</span>
+<span class="accordion-title-text font-title-lg text-title-lg text-primary group-hover:text-primary-container leading-snug transition-colors">
+                    В чем фундаментальное отличие менторства Veritas от классического консалтинга «Большой тройки»?
+                  </span>
+</span>
+<!-- Chevron Indicator: optical alignment wrapper -->
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container group-hover:bg-primary-container group-hover:text-on-primary flex items-center justify-center text-primary transition-all duration-300 transform mt-0.5 chevron-icon">
+<span class="material-symbols-outlined text-lg transition-transform duration-300">expand_more</span>
+</span>
+</button>
+</h3>
+<!-- Layer 4: Collapsible Panel via Grid -->
+<div aria-labelledby="accordion-header-1" class="accordion-grid grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]" id="accordion-panel-1" role="region">
+<div class="overflow-hidden">
+<!-- Inner Wrapper: contains padding to prevent layout collapse glitch -->
+<div class="px-space-lg pb-space-lg pt-space-xs flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Консалтинговые корпорации продают многостраничные презентации и чужие бенчмарки, делегируя исполнение младшим аналитикам. Veritas практикует <strong class="text-primary font-semibold">со-управление решением</strong>: наш партнер находится в прямом контакте с основателем или советом директоров до достижения необратимого результата.
+                  </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-success text-base mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Ответственность за P&amp;L</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Синхронизация вознаграждения с достижением таргетов EBITDA.</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-success text-base mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Прямой доступ 24/7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Никаких прослоек из менеджеров проектов — прямой диалог партнеров.</span>
+</div>
+</div>
+</div>
+<blockquote class="pl-space-md bg-surface-container-low py-space-sm rounded-r-lg">
+<p class="font-headline-sm text-headline-sm italic text-primary leading-normal">
+                      «Мы не даем абстрактных советов о том, как управлять штормом. Мы встаем за штурвал плечом к плечу с капитаном.»
+                    </p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Multi-line Title Stress Test Target -->
+<div class="accordion-item card-style bg-surface rounded-xl shadow-sm transition-all duration-200 overflow-hidden" data-accordion="item">
+<h3>
+<button aria-controls="accordion-panel-2" aria-expanded="false" class="accordion-trigger w-full flex items-start justify-between p-space-lg text-left bg-transparent hover:bg-surface-container-low transition-colors duration-150 focus-visible:bg-surface-container-low focus-visible:outline-none cursor-pointer group" id="accordion-header-2" type="button">
+<span class="flex flex-col gap-1 pr-space-md min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">География • Раздел 02</span>
+<span class="accordion-title-text font-title-lg text-title-lg text-primary group-hover:text-primary-container leading-snug transition-colors">
+                    Эффективен ли формат удаленного стратегического сопровождения для многопрофильных холдингов с распределенными советами директоров в 5+ часовых поясах одновременно?
+                  </span>
+</span>
+<!-- Chevron MUST NOT shrink or center in 3 lines -->
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container group-hover:bg-primary-container group-hover:text-on-primary flex items-center justify-center text-primary transition-all duration-300 transform mt-0.5 chevron-icon">
+<span class="material-symbols-outlined text-lg transition-transform duration-300">expand_more</span>
+</span>
+</button>
+</h3>
+<div aria-labelledby="accordion-header-2" class="accordion-grid grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]" id="accordion-panel-2" role="region">
+<div class="overflow-hidden">
+<div class="px-space-lg pb-space-lg pt-space-xs flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Более 65% наших доверителей оперируют в распределенной структуре: штаб-квартиры в Дубае, производственные активы в Центральной Азии и финансовые структуры в Швейцарии. Мы разворачиваем защищенный асинхронный протокол принятия стратегических решений.
+                  </p>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-2">
+<span class="font-title-sm text-title-sm text-primary">Матрица асинхронного согласования:</span>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-hover"></span>
+<span><strong>24-часовой спринт анализа:</strong> экспертная оценка выносится в течение одного цикла обращения Земли.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-hover"></span>
+<span><strong>Единое зеркало контекста:</strong> защищенный дашборд с фиксацией аргументов каждого члена совета.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 3: Security & NDA -->
+<div class="accordion-item card-style bg-surface rounded-xl shadow-sm transition-all duration-200 overflow-hidden" data-accordion="item">
+<h3>
+<button aria-controls="accordion-panel-3" aria-expanded="false" class="accordion-trigger w-full flex items-start justify-between p-space-lg text-left bg-transparent hover:bg-surface-container-low transition-colors duration-150 focus-visible:bg-surface-container-low focus-visible:outline-none cursor-pointer group" id="accordion-header-3" type="button">
+<span class="flex flex-col gap-1 pr-space-md min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Комплаенс • Раздел 03</span>
+<span class="accordion-title-text font-title-lg text-title-lg text-primary group-hover:text-primary-container leading-snug transition-colors">
+                    Как обеспечивается абсолютная конфиденциальность и юридическая защита коммерческой тайны (NDA)?
+                  </span>
+</span>
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container group-hover:bg-primary-container group-hover:text-on-primary flex items-center justify-center text-primary transition-all duration-300 transform mt-0.5 chevron-icon">
+<span class="material-symbols-outlined text-lg transition-transform duration-300">expand_more</span>
+</span>
+</button>
+</h3>
+<div aria-labelledby="accordion-header-3" class="accordion-grid grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]" id="accordion-panel-3" role="region">
+<div class="overflow-hidden">
+<div class="px-space-lg pb-space-lg pt-space-xs flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Швейцарская юрисдикция</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Hardware Token</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    До подписания соглашения об обмене данными мы активируем трехконтурный защитный периметр. Наше юридическое лицо зарегистрировано в кантоне Цуг (Швейцария), что исключает возможность внесудебного раскрытия сведений третьим сторонам.
+                  </p>
+<div class="p-space-md bg-surface-container-low rounded-lg flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">lock</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Стандарт ISO/IEC 27001</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Сквозное PGP-шифрование всей корреспонденции.</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary font-bold">SECURE_LEVEL_5</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 4: Selectivity & Funnel -->
+<div class="accordion-item card-style bg-surface rounded-xl shadow-sm transition-all duration-200 overflow-hidden" data-accordion="item">
+<h3>
+<button aria-controls="accordion-panel-4" aria-expanded="false" class="accordion-trigger w-full flex items-start justify-between p-space-lg text-left bg-transparent hover:bg-surface-container-low transition-colors duration-150 focus-visible:bg-surface-container-low focus-visible:outline-none cursor-pointer group" id="accordion-header-4" type="button">
+<span class="flex flex-col gap-1 pr-space-md min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Селективность • Раздел 04</span>
+<span class="accordion-title-text font-title-lg text-title-lg text-primary group-hover:text-primary-container leading-snug transition-colors">
+                    Каковы критерии отбора проектов и почему одобряются только 2 заявки из 10 на квартал?
+                  </span>
+</span>
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container group-hover:bg-primary-container group-hover:text-on-primary flex items-center justify-center text-primary transition-all duration-300 transform mt-0.5 chevron-icon">
+<span class="material-symbols-outlined text-lg transition-transform duration-300">expand_more</span>
+</span>
+</button>
+</h3>
+<div aria-labelledby="accordion-header-4" class="accordion-grid grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]" id="accordion-panel-4" role="region">
+<div class="overflow-hidden">
+<div class="px-space-lg pb-space-lg pt-space-xs flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Личное погружение ведущих партнеров требует предельной концентрации внимания. Мы намеренно ограничиваем портфель 6 активными кейсами в один момент времени.
+                  </p>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-3 gap-space-sm p-space-md bg-surface-container-low rounded-lg text-center">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">20%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Квота одобрения</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€15M+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Нижний порог выручки</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary-hover font-bold">4 нед.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Окно аккредитации</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- CTA Section: Integrated Advisory Consultation -->
+<section class="w-full py-space-3xl bg-surface-container-low border-t border-outline">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center flex flex-col items-center">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold mb-space-xs">
+        Система валидации метрик
+      </span>
+<h2 class="font-display-md text-display-md text-primary tracking-tight">
+        Внедрите проверенный интерфейсный стандарт
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-space-xs leading-relaxed">
+        Получите полную спецификацию виджета, типографическую систему токенов и модуль защиты данных для вашей образовательной или финтех-платформы.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm mt-space-lg">
+<a class="px-space-xl py-3 rounded-lg bg-tertiary-hover text-on-tertiary font-label-lg text-label-lg hover:bg-tertiary transition-colors shadow-md flex items-center gap-2" data-path="kontakty" href="#">
+<span>Запросить аудит интерфейса</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="px-space-lg py-3 rounded-lg bg-surface text-primary border border-outline font-label-lg text-label-lg hover:bg-surface-container transition-colors" onclick="runGazeBenchmark()">
+          Повторить тест времени считывания
+        </button>
+</div>
+</div>
+</section>
+<script>
+  function togglePublications() {
+      const extraPubs = document.getElementById('extra-publications');
+      const toggleText = document.getElementById('toggle-btn-text');
+      const toggleIcon = document.getElementById('toggle-btn-icon');
+
+      if (!extraPubs) return;
+
+      const isHidden = extraPubs.classList.contains('hidden');
+
+      if (isHidden) {
+        extraPubs.classList.remove('hidden');
+        extraPubs.classList.add('flex');
+        toggleText.textContent = 'Свернуть список публикаций';
+        toggleIcon.textContent = 'expand_less';
+      } else {
+        extraPubs.classList.add('hidden');
+        extraPubs.classList.remove('flex');
+        toggleText.textContent = 'Показать еще публикации (4)';
+        toggleIcon.textContent = 'expand_more';
+      }
+    }
+
+    function setScenario(type) {
+      const btnStandard = document.getElementById('btn-scen-standard');
+      const btnStress = document.getElementById('btn-scen-stress');
+      const btnEmpty = document.getElementById('btn-scen-empty');
+
+      const expertName = document.getElementById('expert-name');
+      const expertTitle = document.getElementById('expert-title');
+      const publicationsContainer = document.getElementById('publications-container');
+      const emptyState = document.getElementById('publications-empty-state');
+      const accordionAction = document.getElementById('accordion-action-wrapper');
+      const pubBadge = document.getElementById('pub-count-badge');
+
+      // Reset button styles
+      [btnStandard, btnStress, btnEmpty].forEach(btn => {
+        btn.className = 'px-3 py-1.5 rounded text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-all';
+      });
+
+      if (type === 'standard') {
+        btnStandard.className = 'px-3 py-1.5 rounded text-on-primary bg-primary font-label-sm text-label-sm transition-all';
+        expertName.textContent = 'Анна Смирнова';
+        expertTitle.textContent = 'Кандидат философских наук, старший действующий эксперт региональной предметной комиссии ЕГЭ, ведущий ментор аналитических программ Veritas.';
+        
+        // Restore standard publications
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+        
+        // Show primary publication blocks
+        publicationsContainer.querySelectorAll('.p-space-sm').forEach(el => el.classList.remove('hidden'));
+        accordionAction.classList.remove('hidden');
+        pubBadge.textContent = 'Всего: 7 работ';
+        pubBadge.className = 'font-code-sm text-code-sm px-2.5 py-1 rounded bg-secondary/10 text-secondary font-bold';
+      } 
+      else if (type === 'stress') {
+        btnStress.className = 'px-3 py-1.5 rounded text-on-primary bg-primary font-label-sm text-label-sm transition-all';
+        expertName.textContent = 'Анна-Мария Виктория фон Смирнова-Константинопольская';
+        expertTitle.textContent = 'Кандидат философских наук, доктор социологических исследований Европейского института сравнительного анализа, действительный председатель апелляционной коллегии и координатор высшей лиги экспертов.';
+        
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+        publicationsContainer.querySelectorAll('.p-space-sm').forEach(el => el.classList.remove('hidden'));
+        accordionAction.classList.remove('hidden');
+        pubBadge.textContent = 'Всего: 18 публикаций';
+        pubBadge.className = 'font-code-sm text-code-sm px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold';
+      } 
+      else if (type === 'empty') {
+        btnEmpty.className = 'px-3 py-1.5 rounded text-on-primary bg-primary font-label-sm text-label-sm transition-all';
+        expertName.textContent = 'Анна Смирнова';
+        expertTitle.textContent = 'Кандидат философских наук, старший действующий эксперт комиссии.';
+        
+        // Hide list items, show empty fallback
+        publicationsContainer.querySelectorAll('.p-space-sm').forEach(el => el.classList.add('hidden'));
+        document.getElementById('extra-publications').classList.add('hidden');
+        document.getElementById('extra-publications').classList.remove('flex');
+        
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+        accordionAction.classList.add('hidden');
+        pubBadge.textContent = '0 публикаций';
+        pubBadge.className = 'font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-bold';
+      }
+    }
+
+  (function() {
+    // 1. Accordion Core Interaction (Smooth Grid Method)
+    const accordionGroup = document.getElementById('veritas-accordion-group');
+    if (!accordionGroup) return;
+
+    const items = accordionGroup.querySelectorAll('[data-accordion="item"]');
+
+    
+
+    items.forEach((item) => {
+      const trigger = item.querySelector('.accordion-trigger');
+      const panel = item.querySelector('.accordion-grid');
+      const chevron = item.querySelector('.chevron-icon');
+
+      if (!trigger || !panel) return;
+
+      trigger.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Optional: close other items for an exclusive accordion experience
+        // or keep multi-open. Here we allow smooth multi-open or single-click.
+        if (isExpanded) {
+          // Collapse
+          trigger.setAttribute('aria-expanded', 'false');
+          panel.classList.remove('grid-rows-[1fr]');
+          panel.classList.add('grid-rows-[0fr]');
+          chevron.classList.remove('rotate-180');
+        } else {
+          // Expand
+          trigger.setAttribute('aria-expanded', 'true');
+          panel.classList.remove('grid-rows-[0fr]');
+          panel.classList.add('grid-rows-[1fr]');
+          chevron.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // 2. Style Switcher (Carded vs Minimal Clean Lines)
+    const btnCarded = document.getElementById('btn-style-carded');
+    const btnMinimal = document.getElementById('btn-style-minimal');
+
+    
+
+    function setCardedStyle() {
+      btnCarded.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      btnCarded.classList.remove('text-on-surface-variant');
+      btnMinimal.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      btnMinimal.classList.add('text-on-surface-variant');
+
+      items.forEach(item => {
+        item.classList.add('bg-surface', 'rounded-xl', 'shadow-sm');
+        item.classList.remove('bg-transparent', 'shadow-none', 'rounded-none');
+      });
+      accordionGroup.classList.remove('gap-0');
+      accordionGroup.classList.add('gap-space-md');
+    }
+
+    function setMinimalStyle() {
+      btnMinimal.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      btnMinimal.classList.remove('text-on-surface-variant');
+      btnCarded.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      btnCarded.classList.add('text-on-surface-variant');
+
+      items.forEach(item => {
+        item.classList.remove('bg-surface', 'rounded-xl', 'shadow-sm');
+        item.classList.add('bg-transparent', 'shadow-none', 'rounded-none');
+      });
+      accordionGroup.classList.remove('gap-space-md');
+      accordionGroup.classList.add('gap-0');
+    }
+
+    if (btnCarded && btnMinimal) {
+      btnCarded.addEventListener('click', setCardedStyle);
+      btnMinimal.addEventListener('click', setMinimalStyle);
+    }
+
+    // 3. Defensive Stress Test Toggle (Injects extreme chaotic content)
+    const btnStress = document.getElementById('btn-stress-toggle');
+    const stressLabel = document.getElementById('stress-label');
+    let stressActive = false;
+
+    const originalTexts = [];
+    const titles = document.querySelectorAll('.accordion-title-text');
+    titles.forEach(t => originalTexts.push(t.innerHTML));
+
+    if (btnStress) {
+      btnStress.addEventListener('click', () => {
+        stressActive = !stressActive;
+        if (stressActive) {
+          stressLabel.textContent = 'Defensive Stress Test: АКТИВЕН';
+          btnStress.classList.add('bg-tertiary-hover', 'text-on-tertiary');
+          btnStress.classList.remove('bg-surface-container', 'text-primary');
+
+          // Mutate Title 2 to an ultra-long, 6-line anomalous title without breaking layout
+          if (titles[1]) {
+            titles[1].innerHTML = `[СТРЕСС-ТЕСТ: 8 СТРОК] Эффективен ли формат удаленного стратегического сопровождения для транснациональных многопрофильных холдингов с распределенными советами директоров в 7+ часовых поясах, включающий параллельный синхронный аудит финансовых рисков, кибербезопасности и соответствия строжайшим требованиям Европейского союза и швейцарского регулятора FINMA в период рыночной волатильности?`;
+          }
+          if (titles[0]) {
+            titles[0].innerHTML = `[ДЛИННОЕ_СЛОВО_БЕЗ_ПРОБЕЛОВ_ДЛЯ_ПРОВЕРКИ_OVERFLOW] ПРЕВОСХОДИТЕЛЬСТВО_СТРАТЕГИЧЕСКОГО_КОНСАЛТИНГА_ВЕРИТАС_МЕНТОРШИП`;
+          }
+        } else {
+          stressLabel.textContent = 'Defensive Stress Test: ВЫКЛ';
+          btnStress.classList.remove('bg-tertiary-hover', 'text-on-tertiary');
+          btnStress.classList.add('bg-surface-container', 'text-primary');
+
+          titles.forEach((t, index) => {
+            t.innerHTML = originalTexts[index];
+          });
+        }
+      });
+    }
+
+    // 4. A11y & Spec Overlay Toggle
+    const btnSpec = document.getElementById('btn-spec-toggle');
+    const specPanel = document.getElementById('spec-panel');
+
+    if (btnSpec && specPanel) {
+      btnSpec.addEventListener('click', () => {
+        specPanel.classList.toggle('hidden');
+        btnSpec.classList.toggle('bg-primary');
+        btnSpec.classList.toggle('text-on-primary');
+      });
+    }
+
+  })();
+</script>
+</main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(26,38,34,0.02)]"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-space-2xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-title-md">V</div><span class="font-headline-sm text-headline-sm text-primary tracking-tight">VERITAS ADVISORY</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Стратегическое консультирование первого эшелона, архитектура лидерства и персональное менторство для основателей и высшего менеджмента.</p></div><div class="md:col-span-4 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary">Навигация</span><div class="flex flex-col gap-1.5"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="o-metodologii" href="#">О методологии</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="programmy" href="#">Программы сопровождения</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="keysy" href="#">Кейсы и результаты</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ekspertiza" href="#">Экспертная база</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="otzyvy" href="#">Рекомендации доверителей</a></div></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary">Деловое присутствие</span><div class="flex flex-col gap-2"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn Executive</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Telegram Private Brief</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Forbes Insights Column</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm"><div class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Veritas Advisory Group. Все права защищены. Конфиденциальность гарантирована стандартами NDA.</div><div class="font-label-sm text-label-sm text-on-surface-variant max-w-lg leading-relaxed">Материалы и экспертные оценки носят аналитический характер и формируются индивидуально для каждого доверителя.</div></div></div></footer></body></html>
