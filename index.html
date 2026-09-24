@@ -272,15 +272,25 @@
 
 <!-- MAIN 5-BLOCK AUTHORITY VALIDATION SHOWCASE -->
 <section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
-<!-- LEFT COLUMN: BLOCK 1 (Portrait & Verified Trust Anchor) -->
-<div class="lg:col-span-5 flex flex-col gap-space-lg sticky top-24">
-<!-- BLOCK 1: Premium Portrait Framing -->
-<div class="relative bg-surface rounded-xl p-space-md shadow-md">
-<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface-container-high">
-<img alt="Елизавета Апалькова  — академический эксперт, старший эксперт предметной комиссии ЕГЭ по обществознанию" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105" src="./img/photo_2026-09-24_12-59-36.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
-<!-- Inset Badge over Portrait -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+    <!-- LEFT COLUMN: BLOCK 1 (Portrait & Verified Trust Anchor) -->
+    <!-- 1. На мобильных колонка статична, на десктопе фиксируется при скролле -->
+    <div class="lg:col-span-5 flex flex-col gap-space-lg static lg:sticky lg:top-24">
+      <!-- BLOCK 1: Premium Portrait Framing -->
+      <div class="relative bg-surface rounded-xl p-space-md shadow-md">
+        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface-container-high">
+          <!-- 2. Анимация и увеличение работают только от брейкпоинта lg: -->
+          <img 
+            alt="Елизавета Апалькова  — академический эксперт, старший эксперт предметной комиссии ЕГЭ по обществознанию" 
+            class="w-full h-full object-cover object-top lg:transition-transform lg:duration-700 lg:hover:scale-105" 
+            src="./img/photo_2026-09-24_12-59-36.jpg"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inset Badge over Portrait -->
 <div class="absolute bottom-4 left-4 right-4  shadow-sm">
 
 </div>
